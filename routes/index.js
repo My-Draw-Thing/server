@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
         "message": 'ok'
     });
 });
-router.post('/signin', UserController.signin);
+router.post('/signup', UserController.signup);
 
 router.get('/*', (req, res, next) => {
     next({ statusCode: 404, msg: 'Route not found' });
